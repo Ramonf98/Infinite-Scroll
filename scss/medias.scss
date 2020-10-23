@@ -1,0 +1,50 @@
+@media screen and (max-width:992px) {
+    header {
+        .menu {
+            .container {
+                .contenedor-items {
+                    .search {
+                        width: 50%;
+                        float: left;
+                    }
+
+                    ul {
+                        margin-left: 10px;
+                        width: 40%;
+                        float: right;
+                        display: flex;
+                        justify-content: end;
+                        margin: 10px 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    header {
+        .menu {
+            .container {
+                .contenedor-items {
+                    .search {
+                        width: 100%;
+                        margin: auto;
+                        float: none;
+
+                        input {
+                            border: 1px solid #aaa;
+                        }
+                    }
+
+                    ul {
+                        width: 100%;
+                        float: none;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}

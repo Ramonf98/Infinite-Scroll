@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap');
+
+/* Colores */
+$fondo:#E7ECEF;
+$color_primario:#201A23;
+$color_secundario:#9E4770;
+$texto:#292929;
+
+$font-family: 'IBM Plex Sans', sans-serif;
+$font-family2: 'Noto Sans JP', sans-serif;
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    background: $fondo;
+    font-family: $font-family2
+}
+
+
+
+@import 'header', 'main', 'medias';

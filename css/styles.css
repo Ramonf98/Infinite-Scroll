@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap");
+/* Colores */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: #E7ECEF;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+header {
+  background: #fff;
+}
+header .menu .titulo {
+  color: #201A23;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  cursor: default;
+  width: 30%;
+}
+header .menu .contenedor-items .search {
+  position: relative;
+  width: 300px;
+}
+header .menu .contenedor-items .search input {
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  margin: 8px;
+  outline: none;
+  padding: 8px;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+header .menu .contenedor-items .search input:focus {
+  border-color: #9E4770;
+  box-shadow: 0 0 3px 0 #9E4770;
+}
+header .menu .contenedor-items .search input:focus + i {
+  color: #9E4770;
+}
+header .menu .contenedor-items .search i {
+  position: absolute;
+  left: 15px;
+  top: 13px;
+  padding: 9px 8px;
+  color: #aaa;
+}
+header .menu .contenedor-items ul li {
+  margin-right: 20px;
+  color: #201A23;
+}
+header .menu .contenedor-items ul li a {
+  color: #201A23;
+  font-size: 1.2rem;
+}
+header .menu .contenedor-items ul li:hover a {
+  color: #9E4770;
+}
+header .menu .contenedor-items ul li .perfil {
+  width: 40px;
+  overflow: hidden;
+}
+header .menu .contenedor-items ul li .perfil img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.main .loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+}
+.main .loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main .card img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 992px) {
+  header .menu .container .contenedor-items .search {
+    width: 50%;
+    float: left;
+  }
+  header .menu .container .contenedor-items ul {
+    margin-left: 10px;
+    width: 40%;
+    float: right;
+    display: flex;
+    justify-content: end;
+    margin: 10px 0px;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .menu .container .contenedor-items .search {
+    width: 100%;
+    margin: auto;
+    float: none;
+  }
+  header .menu .container .contenedor-items .search input {
+    border: 1px solid #aaa;
+  }
+  header .menu .container .contenedor-items ul {
+    width: 100%;
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+}
